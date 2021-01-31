@@ -3,7 +3,8 @@
 function initPlayer() {
 
 var video = document.querySelector("#videoElement");
-  var videoSrc = 'https://stream.stoveflix.com/hls/SCscvDSABKtqHT6.m3u8';
+  var videoSrc = ''; // Address to m3u8 file
+
   if (Hls.isSupported()) {
     var hls = new Hls();
     hls.loadSource(videoSrc);
